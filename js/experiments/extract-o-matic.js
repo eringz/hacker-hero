@@ -8,17 +8,23 @@
  */
 
 
+
 function extractDigit(num, digitNum)
 {
-    let numString = num.toString();
-    if (digitNum < 0) 
+    for (let i = 0; i < (digitNum < 0 ? -digitNum : digitNum); i++)
     {
-        return numString[numString.indexOf(".")];
+        (digitNum < 0) ? (num *= 10) : (num /= 10); 
+    }
+
+    num = num - (num % 1);
+    return num % 10;
 }
 
-console.log(extractDigit(1824, 2));
-console.log(extractDigit(1821, 0));
-console.log(extractDigit(1234.56, -1));
-console.log(extractDigit(199.35, 0));
-console.log(extractDigit(199.35, -1));
-console.log(extractDigit(199.35, -2));
+
+
+console.log(`extractDigit(1824, 2) to return 8 : ${extractDigit(1824, 2)}`);
+console.log(`extractDigit(1824, 0) to return 4 : ${extractDigit(1824, 0)}`);
+console.log(`extractDigit(1234.56, -1) to return 5 : ${extractDigit(1234.56, -1)}`);
+console.log(`extractDigit(199.35, 0) to return 9 : ${extractDigit(199.35, 0)}`);
+console.log(`extractDigit(199.35, -1) to return 3 : ${extractDigit(199.35, -1)}`);
+console.log(`extractDigit(199.35, -2) to return 5 : ${extractDigit(199.35, -2)}`);
