@@ -41,3 +41,4 @@ console.log(heights([-1,1,1,7]));
 console.log(heights([0,4]));
 console.log(heights([-1,1,1,7,3,5,9]));
 console.log(heights([-1,1,1,7,3,5,9,-3,3,15]));
+console.log(heights([-1,1,1,7,3,5,9,-3,3,15]));
