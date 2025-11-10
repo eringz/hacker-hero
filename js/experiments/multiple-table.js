@@ -18,7 +18,7 @@ function multiTable(x, y)
         {
             console.log(str += i*j);
             if (i == x) {
-                console.log('\n')
+                console.log('\n');
             }
         }
     }
