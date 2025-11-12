@@ -1,0 +1,1 @@
+console.log('Blk13 lot81 Ph1A suburban San Jose Rodriguez Rizal'.toUpperCase());

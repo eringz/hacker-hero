@@ -11,9 +11,18 @@
  * Whenever you're dealing when with two-dimensional arrays, be extra cautious on every single character. 
  * A simple typo or forgetting to add a comma or square bracket can ruin the whole program.
  */
-function twoDimensional (row, column)
-{
+function twoDimensional(row, column) {
     let arr = [];
+
+    for (let i = 0; i < row; i++) 
+    {
+        let temp = [];
+        for (let j = 0; j < column; j++) 
+        {
+            temp.push(0);
+        }
+        arr.push(temp);
+    }
 
     return arr;
 }
@@ -26,6 +35,6 @@ console.log('twoDimensional(1,5) to return [[0,0,0,0,0]]');
 
 console.log(`\nOutput`);
 
-console.log(twoDimensional(2,5));
-console.log(twoDimensional(3,4));
-console.log(twoDimensional(1,5));
+console.log(twoDimensional(2, 5));
+console.log(twoDimensional(3, 4));
+console.log(twoDimensional(1, 5));
