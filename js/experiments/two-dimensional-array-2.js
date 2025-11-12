@@ -14,10 +14,23 @@
 function twoDimensional (row, column)
 {
     let arr = [];
+    // let temp = [];
 
     for (let i = 0; i < row; i++)
     {
-        
+        let temp = [];
+        for (let j = 0; j < column; j++)
+        {
+            if (j > 0 &&  j < column-1 && i > 0 && i < row-1 )
+            {
+                temp.push(0);
+            }
+            else
+            {
+                temp.push(1);
+            }
+        }
+        arr.push(temp);
     }
 
     return arr;
