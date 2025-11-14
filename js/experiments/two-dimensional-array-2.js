@@ -14,11 +14,11 @@
 function twoDimensional (row, column)
 {
     let arr = [];
-    // let temp = [];
+    let temp = [];
 
     for (let i = 0; i < row; i++)
     {
-        let temp = [];
+        // let temp = [];
         for (let j = 0; j < column; j++)
         {
             if (j > 0 &&  j < column-1 && i > 0 && i < row-1 )
