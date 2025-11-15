@@ -35,12 +35,7 @@ class Slist
             return;
         }
 
-        while (runner.next !== null)
-        {
-            runner = runner.next;
-        }
-
-        runner.next = node;
+     
 
         
         
@@ -68,8 +63,10 @@ console.log('list.head.value to return 3');
 console.log('list.head.next.value to return 5');
 console.log('list.head.next.next.value to return 7');
 
+console.log('\nOutput\n');
+
 console.log(list);
-console.log(list.head.value);
-console.log(list.head.next.value);
-console.log(list.head.next.next.value);
-console.log(list.head.next.next.next.value);
+// console.log(list.head.value);
+// console.log(list.head.next.value);
+// console.log(list.head.next.next.value);
+// console.log(list.head.next.next.next.value);
